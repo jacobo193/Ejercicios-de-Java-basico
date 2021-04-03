@@ -1,0 +1,2 @@
+Ejercicios basicos de Javaen la carptea de EjerciciosJava se encuentran los puntos del 1 al 15, los puntos 16, 17, ,18 son carpteas separadas
+para realizar estos ejercicios se uso como apoyo la pagina Discoduroderoer link : https://www.discoduroderoer.es/acerca-de-mi/
