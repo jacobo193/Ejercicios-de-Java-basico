@@ -1,10 +1,10 @@
 package com.company;
 
 public class Electrodomestico {
-    protected final static String colorPorDefecto ="blanco";
-    protected final static char consumoPorDefecto ='F';
-    protected final static double PresioBasePorDefecto =100;
-    protected final static double PesoBasePorDefecto =5;
+    protected final static String COLOR_POR_DEFECTO ="blanco";
+    protected final static char CONSUMO_POR_DEFECTO ='F';
+    protected final static double PRESIO_BASE_POR_DEFECTO =100;
+    protected final static double PESO_BASE_POR_DEFECTO =5;
 
     //Atributos
     protected double precioBase;
@@ -31,7 +31,7 @@ public class Electrodomestico {
         if(encontrado){
             this.color=color;
         }else{
-            this.color= colorPorDefecto;
+            this.color= COLOR_POR_DEFECTO;
         }
 
 
@@ -42,7 +42,7 @@ public class Electrodomestico {
         if(consumoEnergetico>=65 && consumoEnergetico<=70){
             this.consumoEnergetico=consumoEnergetico;
         }else{
-            this.consumoEnergetico= consumoPorDefecto;
+            this.consumoEnergetico= CONSUMO_POR_DEFECTO;
         }
 
     }
@@ -110,11 +110,11 @@ public class Electrodomestico {
 
 
     public Electrodomestico(){
-        this(PresioBasePorDefecto, PesoBasePorDefecto, consumoPorDefecto, colorPorDefecto);
+        this(PRESIO_BASE_POR_DEFECTO, PESO_BASE_POR_DEFECTO, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO);
     }
 
     public Electrodomestico(double precioBase, double peso){
-        this(precioBase, peso, consumoPorDefecto, colorPorDefecto);
+        this(precioBase, peso, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO);
     }
 
     public Electrodomestico(double precioBase, double peso, char consumoEnergetico, String color){

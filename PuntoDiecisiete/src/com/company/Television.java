@@ -3,7 +3,7 @@ package com.company;
 class Television extends Electrodomestico{
 
         //Constantes
-        private final static int resolucionPorDefecto = 20;
+        private final static int RESOLUCION_POR_DEFECTO = 20;
 
         //Atributos
         private int resolucion;
@@ -29,11 +29,11 @@ class Television extends Electrodomestico{
         //Constructor
 
         public Television(){
-            this(PresioBasePorDefecto, PesoBasePorDefecto, consumoPorDefecto, colorPorDefecto, resolucionPorDefecto, false);
+            this(PRESIO_BASE_POR_DEFECTO, PESO_BASE_POR_DEFECTO, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO, RESOLUCION_POR_DEFECTO, false);
         }
 
         public Television(double precioBase, double peso){
-            this(precioBase, peso, consumoPorDefecto, colorPorDefecto, resolucionPorDefecto, false);
+            this(precioBase, peso, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO, RESOLUCION_POR_DEFECTO, false);
         }
 
 

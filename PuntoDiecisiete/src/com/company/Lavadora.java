@@ -4,7 +4,7 @@ package com.company;public
 class Lavadora extends Electrodomestico {
 
     //Constantes
-    private final static int cargaPorDefecto=5;
+    private final static int CARGA_POR_DEFECTO =5;
 
     //Atributos
     private int carga;
@@ -28,12 +28,12 @@ class Lavadora extends Electrodomestico {
 
     //Constructor
     public Lavadora(){
-        this(PresioBasePorDefecto, PesoBasePorDefecto, consumoPorDefecto, colorPorDefecto, cargaPorDefecto);
+        this(PRESIO_BASE_POR_DEFECTO, PESO_BASE_POR_DEFECTO, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO, CARGA_POR_DEFECTO);
     }
 
 
     public Lavadora(double precioBase, double peso){
-        this(precioBase, peso, consumoPorDefecto, colorPorDefecto, cargaPorDefecto);
+        this(precioBase, peso, CONSUMO_POR_DEFECTO, COLOR_POR_DEFECTO, CARGA_POR_DEFECTO);
     }
 
 
