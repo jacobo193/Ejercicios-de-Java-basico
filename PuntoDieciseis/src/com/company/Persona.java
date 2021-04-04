@@ -4,7 +4,7 @@ public class Persona {
 
     //creando los atributos y tambien aquellos que deben ser por defectos
 
-    private final static char sexoDef = 'H';
+    private final static char SEXO_DEF = 'H';
     public static final int INFRAPESO = 0;
     public static final int PESO_IDEAL = -1;
     public static final int SOBREPESO = 1;
@@ -16,7 +16,7 @@ public class Persona {
     private int edad;
 // contructor por defecto
     public Persona() {
-        this("", 0, sexoDef, 0, 0);
+        this("", 0, SEXO_DEF, 0, 0);
     }
 // construcores para parametros
 
@@ -39,7 +39,7 @@ public class Persona {
 
         //Si el sexo no es una H o una M, por defecto es H
         if (sexo != 'H' && sexo != 'M') {
-            this.sexo = sexoDef;
+            this.sexo = SEXO_DEF;
         }
     }
 
