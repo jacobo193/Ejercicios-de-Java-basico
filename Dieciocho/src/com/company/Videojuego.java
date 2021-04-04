@@ -1,10 +1,10 @@
 package com.company;
 
 public class Videojuego implements Interfaz{
-        private final static int horasEstimadasPorDefecto =100;
-        public final static int mayor =1;
-        public final static int menor =-1;
-        public final static int igual =0;
+        private final static int HORAS_ESTIMADAS_POR_DEFECTO =100;
+        public final static int MAYOR =1;
+        public final static int MENOR =-1;
+        public final static int IGUAL =0;
         private String titulo;
         private int horasEstimadas;
         private boolean entregado;
@@ -64,14 +64,14 @@ public class Videojuego implements Interfaz{
 
         @Override
         public int compareTo(Object a) {
-            int estado= menor;
+            int estado= MENOR;
 
             //Hacemos un casting de objetos para usar el metodo get
             Videojuego ref=(Videojuego)a;
             if (horasEstimadas>ref.getHorasEstimadas()){
-                estado= mayor;
+                estado= MAYOR;
             }else if(horasEstimadas==ref.getHorasEstimadas()){
-                estado= igual;
+                estado= IGUAL;
             }
 
             return estado;
@@ -95,11 +95,11 @@ public class Videojuego implements Interfaz{
 
         //Constructor
         public Videojuego(){
-            this("", horasEstimadasPorDefecto, "", "");
+            this("", HORAS_ESTIMADAS_POR_DEFECTO, "", "");
         }
 
         public Videojuego(String titulo, String compañia){
-            this(titulo, horasEstimadasPorDefecto, "", compañia);
+            this(titulo, HORAS_ESTIMADAS_POR_DEFECTO, "", compañia);
         }
 
         public Videojuego(String titulo, int horasEstimadas, String genero, String compañia){

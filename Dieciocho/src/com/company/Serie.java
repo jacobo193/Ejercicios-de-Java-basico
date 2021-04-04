@@ -2,10 +2,10 @@ package com.company;
 
 class Serie implements Interfaz {
 
-    private final static int numeroDeTempPorDefecto = 3;
-    public final static int mayor = 1;
-    public final static int menor = -1;
-    public final static int igual = 0;
+    private final static int NUMERO_DE_TEMP_POR_DEFECTO = 3;
+    public final static int MAYOR = 1;
+    public final static int MENOR = -1;
+    public final static int IGUAL = 0;
     private String titulo;
     private int numeroTemporadas = 3;
     private boolean entregado;
@@ -62,14 +62,14 @@ class Serie implements Interfaz {
     }
 
     public int compareTo(Object a) {
-        int estado = menor;
+        int estado = MENOR;
 
         //Hacemos un casting de objetos para usar el metodo get
         Serie ref = (Serie) a;
         if (numeroTemporadas > ref.getnumeroTemporadas()) {
-            estado = mayor;
+            estado = MAYOR;
         } else if (numeroTemporadas == ref.getnumeroTemporadas()) {
-            estado = igual;
+            estado = IGUAL;
         }
 
         return estado;
@@ -94,11 +94,11 @@ class Serie implements Interfaz {
     //Constructor
 
     public Serie() {
-        this("", numeroDeTempPorDefecto, "", "");
+        this("", NUMERO_DE_TEMP_POR_DEFECTO, "", "");
     }
 
     public Serie(String titulo, String creador) {
-        this(titulo, numeroDeTempPorDefecto, "", creador);
+        this(titulo, NUMERO_DE_TEMP_POR_DEFECTO, "", creador);
     }
 
     public Serie(String titulo, int numeroTemporadas, String genero, String creador) {

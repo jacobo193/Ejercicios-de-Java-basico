@@ -45,10 +45,10 @@ public class Main {
         Videojuego videojuegoMayor=listaVideojuegos[0];
 
         for(int i=1;i<listaSeries.length;i++){
-            if(listaSeries[i].compareTo(serieMayor)==Serie.mayor){
+            if(listaSeries[i].compareTo(serieMayor)==Serie.MAYOR){
                 serieMayor=listaSeries[i];
             }
-            if(listaVideojuegos[i].compareTo(videojuegoMayor)==Videojuego.mayor){
+            if(listaVideojuegos[i].compareTo(videojuegoMayor)==Videojuego.MAYOR){
                 videojuegoMayor=listaVideojuegos[i];
             }
 
